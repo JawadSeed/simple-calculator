@@ -18,16 +18,16 @@ const answer = await inquirer.prompt([
 //conditional statement//
 
 if (answer.operator === "Addition") {
-    console.log(answer.FirstNumber + answer.SecondNumber);
+    console.log("The answer of Addition",answer.FirstNumber + answer.SecondNumber);
 } else if (answer.operator === "Subtraction") {
-    console.log(answer.FirstNumber - answer.SecondNumber);
+    console.log("The answer of Subtraction",answer.FirstNumber - answer.SecondNumber);
 } else if (answer.operator === "Multiplication") {
-    console.log(answer.FirstNumber * answer.SecondNumber);
+    console.log("The answer of Multiplication",answer.FirstNumber * answer.SecondNumber);
 } else if (answer.operator === "Division") {
     if (answer.SecondNumber === 0) {
         console.log("Error: Division by zero");
     } else {
-        console.log(answer.FirstNumber / answer.SecondNumber);
+        console.log("The answer of Division",answer.FirstNumber / answer.SecondNumber);
     }
 } else {
     console.log("Invalid operator");
